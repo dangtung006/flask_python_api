@@ -2,27 +2,25 @@
 GET http://localhost:8000/api/users
 
 ###
-GET http://localhost:8000/api/users/2
+GET http://localhost:8000/api/users/1
 
 ###
 POST http://localhost:8000/api/users
 Content-Type: application/json
 
 {
-    "name": "John 111",
-    "email": "john111@google.com",
-    "age": 25
+    "username": "John 111",
+    "password": "john111@google.com"
 }
 
 ###
-PUT http://localhost:8000/api/users/1
+PUT http://localhost:8000/api/users/2
 Content-Type: application/json
 
 {
-    "name": "John 111",
-    "email": "john111@google.com",
-    "age": 25
+    "username": "John 222",
+    "password": "@google.com"
 }
 
 ###
-DELETE http://localhost:8000/api/users/1
+DELETE http://localhost:8000/api/users/2
